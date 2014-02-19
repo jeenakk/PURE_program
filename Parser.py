@@ -17,9 +17,9 @@ def parse(data):
 
         parts=instance.split("\t")
         type =parts[4].replace("\n","")
-        if(type=="NEUTRAL" or type=="ENTAILMENT"):
+        if(type=="NEUTRAL" or type=="CONTRADICTION"):
             type=1
-        elif(type=="CONTRADICTION"):
+        elif(type=="ENTAILMENT"):
             type=0
         else:
             raise EOFError
