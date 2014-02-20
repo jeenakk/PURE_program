@@ -167,4 +167,4 @@ test.allSNum = allSNum;
 test.allSStr = allSStr;
 test.allSTree = allSTree;
 test.allSKids = allSKids;
-save('../test.mat','test');
+save([ '../EntailmentData/' dataFolder 'test.mat'],'test');

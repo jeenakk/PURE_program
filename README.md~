@@ -12,15 +12,30 @@ Parser.py: Adding options for generating data with the following cases:
 4) Similarity measure (scaled to one)
 
 
-Generate and parse all data into their corresponding folders inside '/EntailmentData'
+Generate and parse all data into their corresponding folders inside 'EntailmentData/'
 
 
-
-Data
-============
-The data is classified inside 'EntailmentData/'
 
 Wiki of the results
 ===========
 https://wiki.engr.illinois.edu/display/~khashab2/RTE+project
+
+Data
+============
+The data is classified inside 'EntailmentData/'
+../data/vars.normalized.100.mat : Contains the word vectors 
+
+
+Variables 
+============
+Meaning of some important variables: 
+
+TODO: 
+allSNum = {};
+allSStr = {};
+allSOStr = {};
+allSPOS = {};
+allSTree = {};
+
+
 

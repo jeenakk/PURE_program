@@ -24,10 +24,9 @@ load('../data/msrp_all.mat');              % msrp dataset
 load('../data/msrp_train_binarized_unq.100.mat'); 
 
 % load test sentences and labels
-% commented by Daniel 
 % load([ '../EntailmentData/' dataFolder 'test.mat']);
 % testing_labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
-
+% commented by D
 
 load('../data/both_binarized_unq.100.mat');
 global wordCounter;
