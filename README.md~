@@ -12,7 +12,7 @@ Parser.py: Adding options for generating data with the following cases:
 4) Similarity measure (scaled to one)
 
 
-Generate and parse all data into their corresponding folders inside 'EntailmentData/'
+Generate and parse all data into their corresponding folders inside '/EntailmentData'
 
 
 

@@ -10,7 +10,5 @@ fi
 
 scriptdir=`dirname $0`
 
-echo $scriptdir
-
 java -mx150m -cp "$scriptdir/stanford-parser.jar:" edu.stanford.nlp.parser.lexparser.LexicalizedParser \
  -outputFormat "penn" -sentences newline $scriptdir/grammar/englishPCFG.ser.gz $*
