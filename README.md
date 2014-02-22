@@ -40,11 +40,22 @@ Meaning of some important variables:
 
 
 TODO: 
-allSNum = {};
-allSStr = {};
-allSOStr = {};
-allSPOS = {};
-allSTree = {};
 
+
+allSNum: array of each word's index in the dictionary
+
+allSStr: array of words
+
+allSTree: tree structure. allSTree[i] = j means j is i's parent
+
+allSKids: children info. of the tree.
+
+          allSKids[i,1] is the i's left child
+
+          allSKids[i,2] is the i's right child
+
+allSOStr = {};
+
+allSPOS = {};
 
 
