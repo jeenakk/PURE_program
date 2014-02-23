@@ -15,9 +15,11 @@ Parser.py: Adding options for generating data with the following cases:
 
 4) Similarity measure (scaled to one)
 
-
 Generate and parse all data into their corresponding folders inside 'EntailmentData/'
 
+Running the baseine 
+
+Adding F1 table to the final result 
 
 
 Wiki of the results
