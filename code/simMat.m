@@ -217,11 +217,11 @@ save(outFile, 'dataFullTrain','dataTest','params');
 %%
 %logistic regression
 % clear
-clearvars -except dataFolder
+clearvars -except dataFolder outFile 
 
 addpath('../toolbox/liblinear-1.51/matlab/');
 
-load('../savedParams/simMat_release.mat');
+load(outFile);
 
 c = 0.05;
 
