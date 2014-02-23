@@ -228,5 +228,11 @@ c = 0.05;
 model = train(dataFullTrain.labels', sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
 [predicted_labels,acc,dv] = predict(dataTest.labels', sparse([dataTest.X; dataTest.otherFeat]'),model,'-b 1');
 dlmwrite([ '../EntailmentData/' dataFolder 'output.txt'],predicted_labels)
-
-
+EVAL = Evaluate(dataTest.labels,predicted_labels'); 
+disp(['Accuracy = '   num2str(EVAL(1))]); 
+disp(['Sensitivity = '  num2str(EVAL(2))]); 
+disp(['Specificity = '  num2str(EVAL(3))]); 
+disp(['Precision = '  num2str(EVAL(4))]); 
+disp(['Recall = '  num2str(EVAL(5))]); 
+disp(['F-Measure = '  num2str(EVAL(6))]);
+disp(['G-mean = '  num2str(EVAL(7))]);

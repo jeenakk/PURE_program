@@ -7,7 +7,7 @@ TODO:
 
 Parser.py: Adding options for generating data with the following cases: 
 
-1) ENTAILMENT  vs. ( NEUTRAL or CONTRADICTION) -> already done. 
+1) ENTAILMENT  vs. ( NEUTRAL or CONTRADICTION) -> (done) 
 
 2) CONTRADICTION  vs. ( NEUTRAL or ENTAILMENT) 
 
@@ -19,7 +19,7 @@ Generate and parse all data into their corresponding folders inside 'EntailmentD
 
 Running the baseine 
 
-Adding F1 table to the final result 
+Adding F1 table to the final result -> (done)
 
 
 Wiki of the results

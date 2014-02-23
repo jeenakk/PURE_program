@@ -3,8 +3,8 @@ addpath(genpath('../toolbox/'));
 % load trained RAE
 load('../savedParams/params.mat');
 
-% Daniel: change it later with 'dataFolder'
-outFile = '../savedParams/simMat_release.mat';
+outFile = ['../savedParams/' dataFolder 'simMat_release.mat']; 
+% '../savedParams/simMat_release.mat';
 
 % Load files
 load('../data/vars.normalized.100.mat');   % word representations
@@ -17,19 +17,23 @@ labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
 
 % separate some instances for training 
 randvector = rand(size(labels)); 
+threshold = 0.25; 
+randvector_doubleSize = zeros(2*length(randvector), 1); 
+randvector_doubleSize(1:2:end) = randvector; 
+randvector_doubleSize(2:2:end) = randvector; 
 
-training_labels = labels( randvector > 0.25 ); 
-testing_labels = labels( randvector <= 0.25 ); 
+training_labels = labels( randvector > threshold ); 
+testing_labels = labels( randvector<= threshold ); 
 
-train.allSNum = test.allSNum( randvector > 0.25 );  
-train.allSStr = test.allSStr( randvector > 0.25 );  
-train.allSTree = test.allSTree( randvector > 0.25 );  
-train.allSKids = test.allSKids( randvector > 0.25 );  
+train.allSNum = test.allSNum( randvector_doubleSize > threshold );  
+train.allSStr = test.allSStr( randvector_doubleSize > threshold );  
+train.allSTree = test.allSTree( randvector_doubleSize > threshold );  
+train.allSKids = test.allSKids( randvector_doubleSize > threshold );  
 
-test1.allSNum = test.allSNum( randvector <= 0.25 );  
-test1.allSStr = test.allSStr( randvector <= 0.25 );  
-test1.allSTree = test.allSTree( randvector <= 0.25 );  
-test1.allSKids = test.allSKids( randvector <= 0.25 );  
+test1.allSNum = test.allSNum( randvector_doubleSize <= threshold );  
+test1.allSStr = test.allSStr( randvector_doubleSize <= threshold );  
+test1.allSTree = test.allSTree( randvector_doubleSize <= threshold );  
+test1.allSKids = test.allSKids( randvector_doubleSize <= threshold );  
 
 test = test1; 
 
@@ -65,12 +69,11 @@ plt = getDistances(Trees3,Trees4,type);
 
 
 %%
-randvector_doubleSize = 
-training_sentences = sentences(1:8152);
+training_sentences = sentences(randvector_doubleSize> threshold);
 trains1 = training_sentences(1:2:end);
 trains2 = training_sentences(2:2:end);
 
-testing_sentences = sentences(8153:end);
+testing_sentences = sentences(randvector_doubleSize <= threshold);
 tests1 = testing_sentences(1:2:end);
 tests2 = testing_sentences(2:2:end);
 
@@ -148,7 +151,6 @@ for i=1:length(pl)
 end
     
 for i=1:length(plt)
-    i 
     t1 = Trees3{i};
     t2 = Trees4{i};
 
@@ -214,7 +216,8 @@ save(outFile, 'dataFullTrain','dataTest','params');
 
 %%
 %logistic regression
-clear
+% clear
+clearvars -except dataFolder
 
 addpath('../toolbox/liblinear-1.51/matlab/');
 
@@ -224,4 +227,14 @@ c = 0.05;
 
 model = train(dataFullTrain.labels', sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
 [predicted_labels,acc,dv] = predict(dataTest.labels', sparse([dataTest.X; dataTest.otherFeat]'),model,'-b 1');
-dlmwrite('../output.txt',predicted_labels)
+dlmwrite([ '../EntailmentData/' dataFolder 'output.txt'],predicted_labels)
+EVAL = Evaluate(dataTest.labels,predicted_labels'); 
+disp(['Accuracy = '   num2str(EVAL(1))]); 
+disp(['Sensitivity = ' +  num2str(EVAL(2))]); 
+disp(['Specificity = ' +  num2str(EVAL(3))]); 
+disp(['Precision = ' +  num2str(EVAL(4))]); 
+disp(['Recall = '  num2str(EVAL(5))]); 
+disp(['F-Measure = '  num2str(EVAL(6))]);
+disp(['G-mean = '  num2str(EVAL(7))]);
+% Accuracy, Sensitivity, 
+% Specificity, Precision, Recall, F-Measure, G-mean
