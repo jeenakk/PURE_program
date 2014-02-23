@@ -31,6 +31,8 @@ Parser.py: Adding options for generating data with the following cases:
 
 3) NEUTRAL  vs. ( CONTRADICTION or ENTAILMENT) 
 
+(data is generated and parseed for the above items. But the parser.py needs to be more userfriendly.)
+
 4) Similarity measure (scaled to one)
 
 Generate and parse all data into their corresponding folders inside 'EntailmentData/'
@@ -38,6 +40,8 @@ Generate and parse all data into their corresponding folders inside 'EntailmentD
 Running the baseine 
 
 Adding F1 table to the final result -> (done)
+
+We need to ask if we can use previous RTE datasets for training or not. If we can, we should pretrain on other datasets. 
 
 
 Wiki of the results

@@ -19,9 +19,9 @@ def parse(data):
 	print parts        
 		
 	type =parts[4].replace("\n","")
-        if(type=="ENTAILMENT" or type=="CONTRADICTION"):
+        if(type=="NEUTRAL" or type=="CONTRADICTION"):
             type=1
-        elif(type=="NEUTRAL"):
+        elif(type=="ENTAILMENT"):
             type=0
         else:
 	    print "type = " + type +". compare with NEUTRAL"

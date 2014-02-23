@@ -20,7 +20,6 @@ cd code
 echo run | matlab -nodesktop
 
 
-
 TODO: 
 ============
 
@@ -39,6 +38,8 @@ Generate and parse all data into their corresponding folders inside 'EntailmentD
 Running the baseine 
 
 Adding F1 table to the final result -> (done)
+
+We need to ask if we can use previous RTE datasets for training or not. If we can, we should pretrain on other datasets. 
 
 
 Wiki of the results
