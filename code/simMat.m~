@@ -3,15 +3,37 @@ addpath(genpath('../toolbox/'));
 % load trained RAE
 load('../savedParams/params.mat');
 
-
 % Daniel: change it later with 'dataFolder'
 outFile = '../savedParams/simMat_release.mat';
 
-
 % Load files
 load('../data/vars.normalized.100.mat');   % word representations
-load('../data/msrp_all.mat');              % msrp dataset
+% fid = fopen(['../EntailmentData/' dataFolder 'sentences.txt'], 'r');
+% sentences = fscanf(fid, '%s'); %
+sentences = textread(['../EntailmentData/' dataFolder 'sentences.txt'], '%s', 'delimiter', '\n'); 
 
+load([ '../EntailmentData/' dataFolder 'test.mat']);
+labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
+
+% separate some instances for training 
+randvector = rand(size(labels)); 
+
+training_labels = labels( randvector > 0.25 ); 
+testing_labels = labels( randvector <= 0.25 ); 
+
+train.allSNum = test.allSNum( randvector > 0.25 );  
+train.allSStr = test.allSStr( randvector > 0.25 );  
+train.allSTree = test.allSTree( randvector > 0.25 );  
+train.allSKids = test.allSKids( randvector > 0.25 );  
+
+test1.allSNum = test.allSNum( randvector <= 0.25 );  
+test1.allSStr = test.allSStr( randvector <= 0.25 );  
+test1.allSTree = test.allSTree( randvector <= 0.25 );  
+test1.allSKids = test.allSKids( randvector <= 0.25 );  
+
+test = test1; 
+
+% load('../data/msrp_all.mat');              % msrp dataset
 % converted msrp dataset
 % contains:
 %   allSNum: array of each word's index in the dictionary
@@ -20,13 +42,13 @@ load('../data/msrp_all.mat');              % msrp dataset
 %   allSKids: children info. of the tree.
 %             allSKids[i,1] is the i's left child
 %             allSKids[i,2] is the i's right child
-
-load('../data/msrp_train_binarized_unq.100.mat'); 
-
+% load('../data/msrp_train_binarized_unq.100.mat'); 
 % load test sentences and labels
+% commented by Daniel 
 % load([ '../EntailmentData/' dataFolder 'test.mat']);
 % testing_labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
-% commented by D
+
+load('../data/MSRWordCounter'); 
 
 load('../data/both_binarized_unq.100.mat');
 global wordCounter;
@@ -43,6 +65,7 @@ plt = getDistances(Trees3,Trees4,type);
 
 
 %%
+randvector_doubleSize = 
 training_sentences = sentences(1:8152);
 trains1 = training_sentences(1:2:end);
 trains2 = training_sentences(2:2:end);
@@ -125,6 +148,7 @@ for i=1:length(pl)
 end
     
 for i=1:length(plt)
+    i 
     t1 = Trees3{i};
     t2 = Trees4{i};
 

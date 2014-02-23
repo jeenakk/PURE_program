@@ -3,15 +3,41 @@ addpath(genpath('../toolbox/'));
 % load trained RAE
 load('../savedParams/params.mat');
 
-
-% Daniel: change it later with 'dataFolder'
-outFile = '../savedParams/simMat_release.mat';
-
+outFile = ['../savedParams/' dataFolder 'simMat_release.mat']; 
+% '../savedParams/simMat_release.mat';
 
 % Load files
 load('../data/vars.normalized.100.mat');   % word representations
-load('../data/msrp_all.mat');              % msrp dataset
+% fid = fopen(['../EntailmentData/' dataFolder 'sentences.txt'], 'r');
+% sentences = fscanf(fid, '%s'); %
+sentences = textread(['../EntailmentData/' dataFolder 'sentences.txt'], '%s', 'delimiter', '\n'); 
 
+load([ '../EntailmentData/' dataFolder 'test.mat']);
+labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
+
+% separate some instances for training 
+randvector = rand(size(labels)); 
+threshold = 0.25; 
+randvector_doubleSize = zeros(2*length(randvector), 1); 
+randvector_doubleSize(1:2:end) = randvector; 
+randvector_doubleSize(2:2:end) = randvector; 
+
+training_labels = labels( randvector > threshold ); 
+testing_labels = labels( randvector<= threshold ); 
+
+train.allSNum = test.allSNum( randvector_doubleSize > threshold );  
+train.allSStr = test.allSStr( randvector_doubleSize > threshold );  
+train.allSTree = test.allSTree( randvector_doubleSize > threshold );  
+train.allSKids = test.allSKids( randvector_doubleSize > threshold );  
+
+test1.allSNum = test.allSNum( randvector_doubleSize <= threshold );  
+test1.allSStr = test.allSStr( randvector_doubleSize <= threshold );  
+test1.allSTree = test.allSTree( randvector_doubleSize <= threshold );  
+test1.allSKids = test.allSKids( randvector_doubleSize <= threshold );  
+
+test = test1; 
+
+% load('../data/msrp_all.mat');              % msrp dataset
 % converted msrp dataset
 % contains:
 %   allSNum: array of each word's index in the dictionary
@@ -20,14 +46,13 @@ load('../data/msrp_all.mat');              % msrp dataset
 %   allSKids: children info. of the tree.
 %             allSKids[i,1] is the i's left child
 %             allSKids[i,2] is the i's right child
-
-load('../data/msrp_train_binarized_unq.100.mat'); 
-
+% load('../data/msrp_train_binarized_unq.100.mat'); 
 % load test sentences and labels
 % commented by Daniel 
 % load([ '../EntailmentData/' dataFolder 'test.mat']);
 % testing_labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
 
+load('../data/MSRWordCounter'); 
 
 load('../data/both_binarized_unq.100.mat');
 global wordCounter;
@@ -44,11 +69,11 @@ plt = getDistances(Trees3,Trees4,type);
 
 
 %%
-training_sentences = sentences(1:8152);
+training_sentences = sentences(randvector_doubleSize> threshold);
 trains1 = training_sentences(1:2:end);
 trains2 = training_sentences(2:2:end);
 
-testing_sentences = sentences(8153:end);
+testing_sentences = sentences(randvector_doubleSize <= threshold);
 tests1 = testing_sentences(1:2:end);
 tests2 = testing_sentences(2:2:end);
 
@@ -191,7 +216,8 @@ save(outFile, 'dataFullTrain','dataTest','params');
 
 %%
 %logistic regression
-clear
+% clear
+clearvars -except dataFolder
 
 addpath('../toolbox/liblinear-1.51/matlab/');
 
@@ -201,4 +227,6 @@ c = 0.05;
 
 model = train(dataFullTrain.labels', sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
 [predicted_labels,acc,dv] = predict(dataTest.labels', sparse([dataTest.X; dataTest.otherFeat]'),model,'-b 1');
-dlmwrite('../output.txt',predicted_labels)
+dlmwrite([ '../EntailmentData/' dataFolder 'output.txt'],predicted_labels)
+
+
