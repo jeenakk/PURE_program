@@ -2,6 +2,24 @@ PURE_Program
 ============
 
 
+How to RUN
+============
+
+For each data folder we need to separate sentences with labels: 
+
+sed '1~3d' input_entailment.txt > sentences.txt
+sed -n 'p;N;N' input_entailment.txt > labels.txt
+
+And parse the sentences 
+
+./stanford-parser-2011-09-14/lexparser.sh sentences.txt > parsed.txt
+
+And run the matlab code 
+
+cd code
+echo run | matlab -nodesktop
+
+
 TODO: 
 ============
 
