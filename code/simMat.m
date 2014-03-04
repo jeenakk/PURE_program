@@ -236,3 +236,14 @@ disp(['Precision = '  num2str(EVAL(4))]);
 disp(['Recall = '  num2str(EVAL(5))]); 
 disp(['F-Measure = '  num2str(EVAL(6))]);
 disp(['G-mean = '  num2str(EVAL(7))]);
+disp(['MSE = '  num2str(EVAL(8))]);
+
+[RHO_s,PVAL_s] = corr(dataTest.labels',predicted_labels,'Type','Spearman');
+[RHO_p,PVAL_p] = corr(dataTest.labels',predicted_labels,'Type','Pearson');
+
+disp('Spearmans rho : ')
+RHO_s
+PVAL_s
+disp('Pearsons rho : ')
+RHO_p
+PVAL_p

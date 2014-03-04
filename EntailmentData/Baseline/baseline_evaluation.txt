@@ -1,0 +1,5 @@
+[1] "Processing baseline_output.txt"
+[1] "Entailment: accuracy 56.2%"
+[1] "Relatedness: Pearson correlation 0.62326299682624"
+[1] "Relatedness: Spearman correlation 0.593310490083445"
+[1] "Relatedness: MSE 9.96618069701901"
