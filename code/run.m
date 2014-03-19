@@ -2,7 +2,8 @@ clear all;  % close all windows
 close all; % clear all variables 
 clc; % clear the 'Command Window'
 
-dataFolder = 'ContradictionVsOthers/'; 
+  dataFolder = 'ThreeVsOthers/' 
+% dataFolder = 'ContradictionVsOthers/'; 
 % dataFolder = 'EntailmentVsOthers/'; 
 % dataFolder = 'NeutralVsOthers/'; 
 % dataFolder = 'SimilarityMeasure/'; 

@@ -1,0 +1,35 @@
+Accuracy = 69.0497% (792/1147)
+
+mse =
+
+   496
+
+Accuracy = 0.6905
+Sensitivity = 0.4322
+Specificity = 0.8058
+Precision = 0.49837
+Recall = 0.4322
+F-Measure = 0.46293
+G-mean = 0.59014
+MSE = 496
+Spearmans rho : 
+
+RHO_s =
+
+    0.3840
+
+
+PVAL_s =
+
+   1.3550e-41
+
+Pearsons rho : 
+
+RHO_p =
+
+    0.4024
+
+
+PVAL_p =
+
+   6.9008e-46

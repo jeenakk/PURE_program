@@ -12,8 +12,10 @@ load('../data/vars.normalized.100.mat');   % word representations
 % sentences = fscanf(fid, '%s'); %
 sentences = textread(['../EntailmentData/' dataFolder 'sentences.txt'], '%s', 'delimiter', '\n'); 
 
+
 load([ '../EntailmentData/' dataFolder 'test.mat']);
-labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
+labels = load(['../EntailmentData/' dataFolder 'labels.txt']); 
+
 
 % separate some instances for training 
 randvector = rand(size(labels)); 
@@ -48,7 +50,7 @@ test = test1;
 %             allSKids[i,2] is the i's right child
 % load('../data/msrp_train_binarized_unq.100.mat'); 
 % load test sentences and labels
-% commented by Daniel 
+% commented by Daniel /home/tzhang46
 % load([ '../EntailmentData/' dataFolder 'test.mat']);
 % testing_labels = load(['../EntailmentData/' dataFolder 'labels.txt']); %
 
