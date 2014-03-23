@@ -1,0 +1,24 @@
+Without John: 
+=======================
+Accuracy = 76.4398% (876/1146)
+Accuracy = 90.3141% (1035/1146)
+Accuracy = 74.3455% (852/1146)
+
+Accuracy = 0.7103
+F-Measure = 0.5
+MSE = 509
+
+
+With John 
+========================
+
+Accuracy = 78.0977% (895/1146)
+Accuracy = 90.7504% (1040/1146)
+Accuracy = 75.5672% (866/1146)
+
+
+Accuracy = 0.71815
+
+F-Measure = 0.5229
+MSE = 539
+

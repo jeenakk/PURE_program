@@ -1,3 +1,4 @@
+
 addpath(genpath('../toolbox/'));
 
 % load trained RAE
@@ -12,13 +13,15 @@ load('../data/vars.normalized.100.mat');   % word representations
 % sentences = fscanf(fid, '%s'); %
 sentences = textread(['../EntailmentData/' dataFolder 'sentences.txt'], '%s', 'delimiter', '\n'); 
 
-
 load([ '../EntailmentData/' dataFolder 'test.mat']);
 labels = load(['../EntailmentData/' dataFolder 'labels.txt']); 
-
+relatednessLabel = load(['../EntailmentData/' dataFolder 'relatednessLabel.txt']); 
 
 % separate some instances for training 
-randvector = rand(size(labels)); 
+% randvector = rand(size(labels));
+% save('randvector', 'randvector')
+load('randvector'); 
+
 threshold = 0.25; 
 randvector_doubleSize = zeros(2*length(randvector), 1); 
 randvector_doubleSize(1:2:end) = randvector; 
@@ -26,6 +29,11 @@ randvector_doubleSize(2:2:end) = randvector;
 
 training_labels = labels( randvector > threshold ); 
 testing_labels = labels( randvector<= threshold ); 
+
+training_relatednesslabels =  relatednessLabel( randvector > threshold ); 
+testing_relatednesslabels =  relatednessLabel( randvector <= threshold ); 
+
+save('relatedness_labels', 'training_relatednesslabels', 'testing_relatednesslabels') ;
 
 train.allSNum = test.allSNum( randvector_doubleSize > threshold );  
 train.allSStr = test.allSStr( randvector_doubleSize > threshold );  
@@ -195,16 +203,16 @@ data.test = dtest;
 
 %%
 % add transpose of sim. matrix
-for i = 1:length(data.train.M)
-    data.train.M{end+1} = data.train.M{i}';
-    data.train.freq1{end+1} = data.train.freq2{i}';
-    data.train.freq2{end+1} = data.train.freq1{i}';
-end
-data.train.label = [data.train.label data.train.label];
-data.train.ldiff = [data.train.ldiff data.train.ldiff];
-data.train.numeq = [data.train.numeq data.train.numeq];
-data.train.numeq2 = [data.train.numeq2 data.train.numeq2];
-data.train.numeq3 = [data.train.numeq3 data.train.numeq3];
+% for i = 1:length(data.train.M)
+%     data.train.M{end+1} = data.train.M{i}';
+%     data.train.freq1{end+1} = data.train.freq2{i}';
+%     data.train.freq2{end+1} = data.train.freq1{i}';
+% end
+% data.train.label = [data.train.label data.train.label];
+% data.train.ldiff = [data.train.ldiff data.train.ldiff];
+% data.train.numeq = [data.train.numeq data.train.numeq];
+% data.train.numeq2 = [data.train.numeq2 data.train.numeq2];
+% data.train.numeq3 = [data.train.numeq3 data.train.numeq3];
 
 %%
 params2.cutoff=70000;
@@ -219,49 +227,149 @@ save(outFile, 'dataFullTrain','dataTest','params');
 %%
 %logistic regression
 % clear
-clearvars -except dataFolder outFile 
+clearvars -except dataFolder outFile  relatednessLabel 
 
 addpath('../toolbox/liblinear-1.51/matlab/');
 
 load(outFile);
 
+% c = [0.001 0.005 0.01 0.05 0.1 0.3 ]
 c = 0.05;
+% -e 
+% epsilon = [0.0001 0.0005 0.001 0.005 0.01 0.05 0.1 ]
 
-%% 0 
-labels_0 = double(dataFullTrain.labels' == 0); 
-labels_0_test = double(dataTest.labels' == 0); 
-model_0 = train(labels_0, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
-[predicted_labels_0,acc_0,dv_0] = predict(labels_0_test, sparse([dataTest.X; dataTest.otherFeat]'),model_0,'-b 1');
+Max_acc =0;
 
- sum(abs(predicted_labels_0 - (dv_0(:,1)> 0.5)) )
+for c1 = [0.001 0.005 0.01 0.05 0.1 ]
+    for e1 = [0.0001 0.0005 0.001 0.005 0.01 0.05  ]
+        for c2 = [0.001 0.005 0.01 0.05 0.1  ]
+            for e2 = [0.0001 0.0005 0.001 0.005 0.01 0.05 ]
+                 for c3 = [0.001 0.005 0.01 0.05 0.1]
+                        for e3 = [0.0001 0.0005 0.001 0.005 0.01 0.05]
+                       %% 0 
+                            labels_0 = double(dataFullTrain.labels' == 0); 
+                            labels_0_test = double(dataTest.labels' == 0); 
+                            model_0 = train(labels_0, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c1) '  -e  '  num2str(e1) ]);
+%                             [predicted_labels_0,acc_0,dv_0] = predict(labels_0_test, sparse([dataTest.X; dataTest.otherFeat]'),model_0,'-b 1');
+%                             sum(abs(predicted_labels_0 - (dv_0(:,1)> 0.5)) )
+                            [tmp, predicted_labels_0,acc_0,dv_0] = evalc ( 'predict(labels_0_test, sparse([dataTest.X; dataTest.otherFeat]''),model_0,''-b 1'')');
 
+                       %% -1 
+                            labels_Neg1 = double(dataFullTrain.labels' == -1); 
+                            labels_Neg1_test = double(dataTest.labels' == -1); 
+                            model_Neg1 = train(labels_Neg1, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c2) '  -e  '  num2str(e2) ]);
+%                             [predicted_labels_Neg1,acc_Neg1,dv_Neg1] = predict(labels_Neg1_test, sparse([dataTest.X; dataTest.otherFeat]'),model_Neg1,'-b 1');
+%                             sum(abs(predicted_labels_Neg1 - (dv_Neg1(:,2)> 0.5)) )
+                            [tmp, predicted_labels_Neg1,acc_Neg1,dv_Neg1] = evalc( 'predict(labels_Neg1_test, sparse([dataTest.X; dataTest.otherFeat]''),model_Neg1,''-b 1'') ' );
 
-%% -1 
-labels_Neg1 = double(dataFullTrain.labels' == -1); 
-labels_Neg1_test = double(dataTest.labels' == -1); 
-model_Neg1 = train(labels_Neg1, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
-[predicted_labels_Neg1,acc_Neg1,dv_Neg1] = predict(labels_Neg1_test, sparse([dataTest.X; dataTest.otherFeat]'),model_Neg1,'-b 1');
-sum(abs(predicted_labels_Neg1 - (dv_Neg1(:,2)> 0.5)) )
+                       %%  1 
+                            labels_1 = double(dataFullTrain.labels' == 1); 
+                            labels_1_test = double(dataTest.labels' == 1); 
+                            model_1 = train(labels_1, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c3) '  -e  '  num2str(e3)]);
+%                             [predicted_labels_1,acc_1,dv_1] = predict(labels_1_test, sparse([dataTest.X; dataTest.otherFeat]'),model_1,'-b 1');
+%                             sum(abs(predicted_labels_1 - (dv_1(:,2)> 0.5)) )
+                            [tmp, predicted_labels_1,acc_1,dv_1]  = evalc(' predict(labels_1_test, sparse([dataTest.X; dataTest.otherFeat]''),model_1,''-b 1'');'); 
 
+                            [MaxVal,I] = max([(dv_Neg1(:,2))';(dv_0(:,1))';(dv_1(:,2))']);
+                            labels_all = I-2;
+                            EVAL = Evaluate(dataTest.labels,labels_all); 
+                            %disp(['Accuracy = '   num2str(EVAL(1))]); 
+                            %disp(['F-Measure = '  num2str(EVAL(6))]);
+                            %disp(['MSE = '  num2str(EVAL(8))]);
+                            temp = EVAL(1);
+                            if gt(temp, Max_acc)
+                                Max_acc = temp
+                                Temp1=model_0;
+                                Temp2 = model_Neg1;
+                                Temp3 = model_1;
+                            end
+                        end
+                 end
+            end
+        end
+    end
+end
 
-%%  1 
-labels_1 = double(dataFullTrain.labels' == 1); 
-labels_1_test = double(dataTest.labels' == 1); 
-model_1 = train(labels_1, sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 0 -c ' num2str(c)]);
-[predicted_labels_1,acc_1,dv_1] = predict(labels_1_test, sparse([dataTest.X; dataTest.otherFeat]'),model_1,'-b 1');
-sum(abs(predicted_labels_1 - (dv_1(:,2)> 0.5)) )
-
-[MaxVal,I] = max([(dv_Neg1(:,2))';(dv_0(:,1))';(dv_1(:,2))']);
-labels_all = I-2;
-EVAL = Evaluate(dataTest.labels,labels_all); 
-disp(['Accuracy = '   num2str(EVAL(1))]); 
-disp(['F-Measure = '  num2str(EVAL(6))]);
-disp(['MSE = '  num2str(EVAL(8))]);
+save('best_entailment_acc=7164_March_23rd_2:34am', 'Temp1', 'Temp2', 'Temp3')
 
 %%  Using Singer's Multi-Class classifier 
 model_s_4 = train(dataFullTrain.labels', sparse([dataFullTrain.X; dataFullTrain.otherFeat]'), ['-s 4 -c ' num2str(c)]);
 [predicted_labels_s_4,acc_s_4] = predict(dataTest.labels', sparse([dataTest.X; dataTest.otherFeat]'),model_1);
+EVAL = Evaluate(dataTest.labels',predicted_labels_s_4); 
+disp(['Accuracy = '   num2str(EVAL(1))]); 
+disp(['F-Measure = '  num2str(EVAL(6))]);
+disp(['MSE = '  num2str(EVAL(8))]);
 
+%% RelatedNess : 
+load 'relatedness_labels'
+input_train = [dataFullTrain.X; dataFullTrain.otherFeat]'; 
+input_test = [dataTest.X; dataTest.otherFeat]'; 
+% training_relatednesslabels 
+% [row_size,col_size]=size(input_train);
+% R=cell(0);
+% 
+% for i = 1:col_size
+%     
+%     
+%  
+% end
+% R = [];
+% S = [5,1];
+
+% net = newff(input_train', training_relatednesslabels', [1] , {'tansig'}, 'trainlm');
+Min = -1;
+Method=0;
+layers1=0;
+layers2=0;
+for k = 1:15
+    k 
+    for i = 1:15
+        i 
+        for j=1:2
+            j 
+            if eq(j,1)
+                net = newff(input_train', training_relatednesslabels', [k i] , {'tansig'}, 'trainlm');
+            else
+                net = newff(input_train', training_relatednesslabels', [k i] , { 'purelin'}, 'trainlm');
+            end
+            net.trainParam.showWindow = false; 
+            net = train(net,input_train',training_relatednesslabels');
+            similarityPrediction = 4*sim(net, input_test')+1; 
+            temp= mean( (testing_relatednesslabels' - similarityPrediction ).^2 );
+            if eq(Min,-1)
+                Min = temp;
+            elseif ge(Min,temp)
+                Min = temp
+                Method=j;
+                layers1=k;
+                layers2=i;
+                minNet = net; 
+            end
+        end
+    end
+end
+% best way Min = 6.2227, Method = tansig and layers =4
+% size hidden layer  (1 to 15)
+% tansig purelin 
+% number of hidden layers (1 to 2)
+% view(net)
+% net = train(net,input_train',training_relatednesslabels');
+% similarityPrediction = 4*sim(net, input_test')+1; 
+% 
+% mean( (testing_relatednesslabels' - similarityPrediction ).^2   )
+% 
+% [RHO_s,PVAL_s] = corr(testing_relatednesslabels',similarityPrediction,'Type','Spearman');
+% [RHO_p,PVAL_p] = corr(testing_relatednesslabels',similarityPrediction,'Type','Pearson');
+% 
+% disp('Spearmans rho : ')
+% RHO_s
+% PVAL_s
+% disp('Pearsons rho : ')
+% RHO_p
+% PVAL_p
+
+pairId_train = load(['../EntailmentData/PairId_train.txt']); 
+writeTheSemEVALOutput('') 
 
 % dlmwrite([ '../EntailmentData/' dataFolder 'output.txt'],predicted_labels)
 
@@ -275,12 +383,5 @@ model_s_4 = train(dataFullTrain.labels', sparse([dataFullTrain.X; dataFullTrain.
 % disp(['G-mean = '  num2str(EVAL(7))]);
 % disp(['MSE = '  num2str(EVAL(8))]);
 % 
-% [RHO_s,PVAL_s] = corr(dataTest.labels',predicted_labels,'Type','Spearman');
-% [RHO_p,PVAL_p] = corr(dataTest.labels',predicted_labels,'Type','Pearson');
-% 
-% disp('Spearmans rho : ')
-% RHO_s
-% PVAL_s
-% disp('Pearsons rho : ')
-% RHO_p
-% PVAL_p
+
+
