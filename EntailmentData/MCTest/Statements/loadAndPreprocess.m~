@@ -1,0 +1,27 @@
+
+name = 'mc1600x2Edev0x2Estatements'; 
+values = eval(name);
+
+text = {}; 
+hypothesis = {}; 
+decision = {}; 
+
+for i = 2:4:(size(eval(name),1)-1)
+    splitted = regexp(values{i}, '"', 'split')
+    decision{end+1} = splitted(4); 
+    
+    text{end+1} = values{i+1};
+    hypothesis{end+1}  = values{i+2}; 
+%     values{i+3}
+end
+
+decision{1}
+
+pattern = 'entailment="*"'
+a = regexp(decision{1}, '"', 'split')
+
+str = decision{1}; 
+str(17:27)
+
+
+
