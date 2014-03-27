@@ -23,4 +23,3 @@ for i = 2:4:(size(eval(name),1)-1)
 %     values{i+3}
 end
 save(name, 'decision', 'text', 'hypothesis')
-
