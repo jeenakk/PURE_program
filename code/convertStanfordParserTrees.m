@@ -6,14 +6,12 @@ load('../data/vars.normalized.100.mat');
 global wordMap;
 wordMap = containers.Map(words,1:length(words));
 
-
 allSNum = {};
 allSStr = {};
 allSOStr = {};
 allSPOS = {};
 allSTree = {};
 
-    
 fid = fopen(inputFile, 'r');
 fileLines = textscan(fid, '%s', 'delimiter', '\n', 'bufsize', 100000);
 fclose(fid);
@@ -30,7 +28,7 @@ for i=1:length(fileLines)
     if (isempty(fileLines{i}))
         continue
     end
-
+    
     if strcmp(fileLines{i}, 'SENTENCE_SKIPPED_OR_UNPARSABLE') || strcmp(fileLines{i}(1), '<')
         allSNum{end+1} = [];
         allSStr{end+1} = [];
@@ -40,12 +38,12 @@ for i=1:length(fileLines)
         c = [c length(allSNum)];
         continue
     end
-
+    
     if strcmp(fileLines{i}, 'Sentence skipped: no PCFG fallback.')
         cc = [cc length(allSNum)];
         continue
     end
-
+    
     line = regexp(fileLines{i},' ','split');
     if isempty(line)
         continue
@@ -56,16 +54,16 @@ for i=1:length(fileLines)
         sNum = [-1]; % -1 for internal nodes
         sStr = {''};
         sOStr = {''};
-
+        
         posTag = regexp(fileLines{i}, '([A-Z]+)', 'match');
-        sPOS = {posTag{1}};            
-%             disp(['Starting new phrase (POS: ' sPOS{1} '). Full line is: ' fileLines{i}])
-
+        sPOS = {posTag{1}};
+        %             disp(['Starting new phrase (POS: ' sPOS{1} '). Full line is: ' fileLines{i}])
+        
         if strcmp(fileLines{i}(1),'(') && strcmp(fileLines{i}(2),'(')
             line = ['(' line{1}(2:end) line(2:end)];
         end
-
-
+        
+        
         sTree= [0];
         lastParents = [1];
         currentParent = 1;
@@ -74,18 +72,18 @@ for i=1:length(fileLines)
         else
             continue;
         end
-
+        
     end
-
+    
     lineLength = length(line);
     s=1;
     if isstr(line)
         line={line};
     end
-
+    
     while s<=lineLength
         startsBranch = strcmp(line{s}(1),'(');
-%             nextIsWord = s<lineLength && strcmp(line{s+1}(end),')');
+        %             nextIsWord = s<lineLength && strcmp(line{s+1}(end),')');
         nextIsWord = s<lineLength && (strcmp(line{s+1}(end),')') || (~strcmp(line{s+1}(1),'(') && s<lineLength-1));
         % internal nodes
         if startsBranch && ~nextIsWord
@@ -99,7 +97,7 @@ for i=1:length(fileLines)
             s=s+1;
             continue;
         end
-
+        
         if startsBranch && nextIsWord
             numWords = 1;
             mm = regexp(line{s+numWords},'(');
@@ -112,20 +110,20 @@ for i=1:length(fileLines)
                 sTree=[sTree currentParent];
                 sPOS{end+1} = line{s}(2:end);
                 sNum = [sNum thisNum];
-
+                
                 numWords = numWords+1;
                 assert(s+numWords <= lineLength);
                 m = regexp(line{s+numWords},')');
                 mm = regexp(line{s+numWords},'(');
             end
-
+            
             if ~isempty(mm)
                 word = line{s+numWords}(mm+1:m-1);
             else
                 word = line{s+numWords}(1:m-1);
             end
-%                 word = regexprep(word, '[0-9]', '2'); % replace all digits with 2
-
+            %                 word = regexprep(word, '[0-9]', '2'); % replace all digits with 2
+            
             thisNum = WordLookup(word);
             sStr{end+1} = [words{thisNum}];
             sOStr{end+1} = [word];
@@ -138,21 +136,21 @@ for i=1:length(fileLines)
                 assert(length(sNum)==length(sStr));
                 assert(length(sNum)==length(sPOS));
                 assert(length(sNum)==length(sTree));
-
+                
                 allSNum{end+1} = sNum;
                 allSStr{end+1} = sStr;
                 allSOStr{end+1} = sOStr;
                 allSPOS{end+1} = sPOS;
                 allSTree{end+1} = sTree;
-
+                
                 s=s+1;
-
+                
                 sNum = [];
                 sStr = {};
                 sOStr = {};
                 sPOS = {};
                 sTree= [];
-
+                
                 continue
             end
             currentParent = lastParents(end);
@@ -167,4 +165,4 @@ test.allSNum = allSNum;
 test.allSStr = allSStr;
 test.allSTree = allSTree;
 test.allSKids = allSKids;
-save([ '../EntailmentData/' dataFolder 'test.mat'],'test');
+save([ '../EntailmentData/' dataFolder parseTreeFile '.mat'],'test');
