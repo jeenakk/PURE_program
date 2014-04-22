@@ -109,7 +109,7 @@ class Parser:
         result_file.close()
 
 def main():
-    test = Parser(1000)
+    test = Parser(9)
 
 
 

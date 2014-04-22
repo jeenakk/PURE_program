@@ -7,6 +7,6 @@ definitions = data(2:3:end);
 f = fopen('../Data/onlySentences.txt', 'w'); 
 for i = 1:size(definitions,1)
     fprintf(f, [ definitions{i}  '\n'])
-    fprintf(f, '############\n' )
+    % fprintf(f, '############\n' )
 end 
 

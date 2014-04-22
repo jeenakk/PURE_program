@@ -1,0 +1,1605 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ national) (NNP Faroese) (NN pilot))
+      (NP (NN union)))
+    (, ,)
+    (VP (VBG covering)
+      (NP (PDT all)
+        (NP
+          (NP (NNS kinds))
+          (PP (IN of)
+            (NP (NNS pilots))))
+        (PP (IN on)
+          (NP (DT the) (NNP Faroe) (NNPS Islands)))
+        (, ,)
+        (ADVP (RB especially))
+        (NP
+          (NP (DT those) (NN working))
+          (PP (IN for)
+            (NP
+              (NP (NNP Atlantic) (NNPS Airways))
+              (, ,)
+              (NP (DT the) (JJ national) (NNP Faroe) (NN airline)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NNP International) (NNP Union))
+      (PP (IN of)
+        (NP (NNP Biochemistry)
+          (CC and)
+          (NNP Molecular) (NNP Biology))))
+    (VP (VBD approved)
+      (NP (NN classification) (NN system))
+      (PP (IN for)
+        (NP
+          (NP (JJ membrane) (NN transport) (NNS proteins))
+          (PP (VBG including)
+            (NP (NN ion) (NNS channels))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Mark) (NNP Twain) (POS 's))
+        (JJS closest) (NN friend))
+      (PP (IN for)
+        (NP (IN over))))
+    (VP
+      (VP (VBP forty)
+        (NP (NNS years)))
+      (, ,)
+      (CC and)
+      (VP (VBZ appears)
+        (PP (IN in)
+          (NP (DT A) (NNP Tramp) (NNP Abroad)))
+        (PP (IN as) (`` ``)
+          (NP (NNP Harris)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (JJ cumulative) (NN record))
+      (PP (IN of)
+        (NP (DT all))))
+    (VP (VBP match)
+      (NP
+        (NP (NNS results) (, ,) (NNS points)
+          (CC and)
+          (NNS goals))
+        (PP (IN of)
+          (NP
+            (NP (DT every) (NN team))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ has)
+                  (VP (VBN played)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (JJ Argentine) (JJ professional) (NN association) (NN football) (NN top) (NN division))
+                        (PP (IN since)
+                          (NP
+                            (NP (PRP$ its) (NN inception))
+                            (PP (IN in)
+                              (NP (CD 1931)))))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (JJ American) (NN game) (NN inventor))
+    (, ,)
+    (ADVP (RB sometimes))
+    (VP (VBD referred)
+      (S
+        (VP (TO to)))
+      (PP (IN by)
+        (NP
+          (NP (NNS fans))
+          (PP (IN as) (`` ``)
+            (NP
+              (NP (DT The) (NNP Official) (NNP Grand) (NNP Old) (NNP Man))
+              (PP (IN of)
+                (NP (NNP Card) (NNPS Games))))
+            ('' '')))))
+    (. .)))
+
+(ROOT
+  (NP (DT a) (JJ Japanese) (NN surname) (. .)))
+
+(ROOT
+  (S
+    (VP (VBN managed)
+      (PP (IN by)
+        (NP (NNP Corrib) (NNP Airport) (NNP Limited))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NN album))
+      (PP (IN by)
+        (NP (JJ Canadian) (NN guitarist) (NNP Lenny) (NNP Breau))))
+    (, ,)
+    (VP (VBN released)
+      (PP (IN in)
+        (NP (CD 1997))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (JJ Australian) (NNS rules))
+    (VP (VBP footballer)
+      (NP
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD played)
+                (PP (IN for)
+                  (NP
+                    (NP (NNP East) (NNP Fremantle))
+                    (CC and)
+                    (NP (NNP South) (NNP Fremantle))))
+                (PP (IN in)
+                  (NP (DT the) (NNP Western) (NNP Australian) (NNP Football) (NNP Association)))))))
+        (CC and)
+        (NP
+          (NP (NNP Carlton))
+          (PP (IN in)
+            (NP (DT the) (JJ Victorian) (NNP Football) (NNP League))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT the)
+      (ADJP (RB only) (VBN known))
+      (NN semiaquatic) (NN Malagasy))
+    (VP
+      (VP (VBZ tenrec))
+      (, ,)
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN found)
+          (PP (IN in)
+            (NP (JJ eastern) (NNP Madagascar)))
+          (, ,)
+          (ADVP (RB especially))
+          (PP (IN in)
+            (CC and)
+            (IN around)
+            (NP (NNP Ranomafana) (NNP National) (NNP Park))))))
+    (. .)))
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT an)
+          (ADJP (JJ extinct))
+          (NNS genus))
+        (PP (IN of)
+          (NP
+            (NP (JJ herbivorous) (NN mammal))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD lived)
+                  (PP (IN during)
+                    (NP (DT the) (NNP Eocene) (NN epoch))))))
+            (: ;)
+            (NP (CD two) (NNS species)))))
+      (VP (VBP are)
+        (ADVP (RB currently))
+        (VP (VBN recognized))))
+    (PRN (, ,)
+      (S
+        (NP (NNP U.))
+        (VP (VBZ anceps)
+          (PP (IN from)
+            (NP (DT the) (NNP United) (NNPS States)))
+          (PP (IN during)
+            (NP
+              (NP (DT the) (NNP Early))
+              (PP (TO to)
+                (NP (NNP Middle) (NNP Eocene)))))))
+      (, ,))
+    (CC and)
+    (S
+      (NP (NNP U.))
+      (VP (VBZ insperatus)
+        (PP (IN of)
+          (NP (NNP Middle)))
+        (PP (TO to)
+          (NP (NNP Late) (NNP Eocene) (NNP China)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ current) (NNS women) (POS 's))
+      (NN basketball))
+    (VP (VBP head)
+      (NP (NN coach))
+      (PP (IN at)
+        (NP
+          (NP (NNP University))
+          (PP (IN of)
+            (NP (NNP Detroit) (NNP Mercy))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN chteau))
+    (PP (IN in)
+      (NP
+        (NP (NNP Dordogne))
+        (, ,)
+        (NP (NNP Aquitane) (, ,) (NNP France))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ professorial) (NN research) (NN fellow))
+    (PP (IN in)
+      (NP
+        (NP (DT the) (NNP Department))
+        (PP (IN of)
+          (NP (NNP Cognitive) (, ,) (NNP Perceptual)
+            (CC &)
+            (NNP Brain) (NNP Sciences)))))
+    (, ,)
+    (NP (DT an) (JJ honorary) (JJ senior) (NN research) (NN associate))
+    (, ,)
+    (NP
+      (NP (DT an) (JJ emeritus) (NN professor))
+      (PP (IN of)
+        (NP
+          (NP (NN psychology))
+          (PP
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN Division))
+                (PP (IN of)
+                  (NP (NNP Psychology)
+                    (CC &)
+                    (NNP Language) (NNPS Sciences)))))
+            (, ,)
+            (CC and)
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN faculty))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Brain) (NNPS Sciences))
+                    (PP (IN at)
+                      (NP (NNP University) (NNP College) (NNP London)))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (CD 1972) (JJ French) (NN romance) (NN film))
+      (VP (VBG starring)
+        (NP
+          (NP (NNP Yves) (NNP Montand))
+          (CC and)
+          (NP (NNP Romy) (NNP Schneider)))))
+    (, ,)
+    (VP (VBD directed)
+      (PP (IN by)
+        (NP (NNP Claude) (NNP Sautet))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN species))
+      (PP (IN of)
+        (NP (NN ground))))
+    (VP (VBP beetle)
+      (PP (IN in)
+        (NP (DT the) (JJ subfamily) (NN Harpalinae))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ national) (NN instrument))
+      (PP (IN of)
+        (NP
+          (NP (NNP Paraguay))
+          (, ,)
+          (CC and)
+          (NP (JJ similar) (NNS instruments)))))
+    (VP (VBP are)
+      (VP (VBN used)
+        (ADVP (RB elsewhere))
+        (PP (IN in)
+          (NP
+            (NP (NNP South) (NNP America))
+            (, ,) (RB particularly)
+            (NP (NNP Venezuela))))))
+    (. .)))
+
+(ROOT
+  (NP (DT an) (NN owl)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (VBZ is)
+          (ADJP (JJ endemic)
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NNS forests))
+                (PP (IN of)
+                  (NP (JJ central) (NNP India)))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (CD 2005) (NN reality) (NN series))
+    (VP (VBG featuring)
+      (NP
+        (NP (NNP Brigitte) (NNP Nielsen))
+        (CC and)
+        (NP (NNP Flavor) (NNP Flav))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (CD 2002) (NNP Tamil) (NN comedy) (NN film))
+    (VP
+      (VP (VBN directed)
+        (PP (IN by)
+          (NP (NNP Moulee))))
+      (CC and)
+      (VP (VBN scripted)
+        (PP (IN by)
+          (NP
+            (NP (NNP Crazy) (NNP Mohan) (. .))
+            (SBAR
+              (S
+                (NP (DT The) (NN film))
+                (VP (VBZ features)
+                  (NP
+                    (NP (NNP Kamal) (NNP Haasan))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN title) (NN role))
+                        (PP (IN alongside)
+                          (NP
+                            (NP (NNP Simran))
+                            (PP (IN with)
+                              (NP (NNP Abbas)
+                                (CC and)
+                                (NNP Sneha))))))))
+                  (PP (IN in)
+                    (NP (JJ primary) (JJ supporting) (NNS roles))))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT an) (JJ American) (NN rapper)
+      (CC and)
+      (NN record))
+    (NP (NN producer))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NNP Royal) (NNP Navy) (NNP Cruizer-class) (NN brig-sloop))
+    (VP
+      (VP (VBN built)
+        (PP (IN by)
+          (NP
+            (NP (NNP John) (NNP King))
+            (PP (IN at)
+              (NP (NNP Dover))))))
+      (CC and)
+      (VP (VBN launched)
+        (PP (IN in)
+          (NP (CD 1803)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT a)
+        (ADJP (NNP South) (JJ African))
+        (NN author))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD wrote)
+            (SBAR
+              (S
+                (NP
+                  (NP (NNPS Messengers) (, ,) (NNPS Watchmen)
+                    (CC and)
+                    (NNPS Stewards))
+                  (, ,)
+                  (NP
+                    (NP (DT a) (JJ biographical) (NN register))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN clergymen))
+                        (VP (VBN licensed)))))
+                  (, ,))
+                (VP (VBN ordained)
+                  (PP (IN for)
+                    (NP (NN service)))
+                  (PRN (, ,)
+                    (CC or)
+                    (ADVP (RB otherwise))))))))))
+    (ADJP (JJ active))
+    (, ,)
+    (PP (IN in)
+      (NP (DT the) (JJ Anglican) (NN diocese)))
+    (PP (IN of)
+      (NP
+        (NP (NNP Cape) (NNP Town))
+        (ADVP (RB prior)
+          (PP (TO to)
+            (NP (DT the) (NN death))))))
+    (PP (IN of)
+      (NP
+        (NP (NNP Archbishop) (NNP William) (NNP West) (NNP Jones))
+        (PP (IN on)
+          (NP (CD 21)))
+        (NP (NNP May) (CD 1908))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT the) (JJ current) (NN Sheriff-Coroner))
+    (PP (IN of)
+      (NP
+        (NP (NNP Orange) (NNP County))
+        (, ,)
+        (NP (NNP California))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN veteran))
+    (PP (IN of)
+      (NP (JJ many)))
+    (PP (IN of)
+      (NP (DT the) (JJ major) (JJ big) (NNS bands)))
+    (PP (IN of)
+      (NP (DT the) (NNS 1980s)))
+    (PP (VBG including)
+      (NP
+        (NP (DT the) (NNP Duke) (NNP Ellington) (NNP Orchestra))
+        (, ,)
+        (NP (NNP Lionel) (NNP Hampton))
+        (, ,)
+        (NP (NNP Buddy) (NNP Rich))
+        (CC and)
+        (NP (NNP Gerry) (NNP Mulligan))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ national) (JJ episcopal) (NN conference))
+      (PP (IN of)
+        (NP (DT the) (NNP Roman) (NNP Catholic))))
+    (VP (VBZ bishops)
+      (PP (IN of)
+        (NP (NNP France))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ Bernese) (NN architect))
+    (PP (IN of)
+      (NP (DT the) (NNP Louis) (NNP XVI) (NN period)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ lead) (NN ship))
+      (PP (IN of)
+        (NP
+          (NP (PRP$ her) (NN class))
+          (PP (IN of)
+            (NP (CD six) (JJ armored) (NN cruiser))))))
+    (VP (VBD built)
+      (PP (IN for)
+        (NP (DT the) (NNP Royal) (NNP Navy)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ first) (NN decade))
+          (PP (IN of)
+            (NP (DT the) (JJ 20th) (NN century))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN village)
+      (CC and)
+      (JJ civil) (NN parish))
+    (PP (IN in)
+      (NP (DT the) (JJ English) (NN county)))
+    (PP (IN of)
+      (NP (NNP Norfolk)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NNS motorsports) (NN facility))
+    (VP (VBN located)
+      (PP (IN in)
+        (NP (NNP Joliet) (, ,) (NNP Illinois))))
+    (. .)))
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT a) (JJ Chilean) (NN chess) (NN player))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ holds)
+            (NP (DT the) (NNP Grandmaster) (NN title))))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP (VBN considered)
+      (S
+        (ADJP (JJ obsolete)))
+      (SBAR (IN since)
+        (S
+          (NP
+            (NP (DT the) (JJ bestowing) (NN authority))
+            (, ,)
+            (NP
+              (NP (DT the) (NN government))
+              (PP (IN of)
+                (NP (NNP South) (NNP Vietnam))))
+            (, ,))
+          (ADVP (RB no) (RB longer))
+          (VP (VBZ exists)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ national) (NN park))
+    (PP (IN in)
+      (NP (NNP New) (NNP South) (NNP Wales)))
+    (, ,)
+    (NP (NNP Australia))
+    (, ,)
+    (NP
+      (NP (JJ 616km) (NN north))
+      (PP (IN of)
+        (NP (NNP Sydney))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ Japanese) (NN manga) (NN series))
+    (VP (VBN written)
+      (CC and)
+      (VBN illustrated)
+      (PP (IN by)
+        (NP
+          (NP (NNP Hiromu) (NNP Arakawa))
+          (, ,)
+          (VP (VBN set)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ fictional) (NNP Yezo) (NNP Agricultural) (NNP High) (NNP School))
+                (PP (IN in)
+                  (NP (NNP Hokkaido)))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT a) (JJ former) (JJ English) (NN football) (NN goalkeeper))
+        (NP (JJ former) (NNP Chelmsfordd) (NNP City) (, ,) (NNP Millwall)))
+      (, ,)
+      (NP (NNP Coventry) (NNP City))
+      (, ,))
+    (ADVP (RB currently))
+    (VP (VBZ works)
+      (PP (IN as)
+        (NP (DT a) (NN football) (NN scout))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ former) (NN member))
+    (PP (IN of)
+      (NP (NNP CLAMP)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN author))
+      (PP (IN of)
+        (NP (DT a) (NN diary))))
+    (VP (VBN written)
+      (PP (IN between)
+        (NP
+          (NP (CD 1676)
+            (CC and)
+            (CD 1698))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (ADVP (RB as))
+              (VP
+                (VP (VBN been)
+                  (VP (VBN published)))
+                (CC and)
+                (VP
+                  (NP (DT the) (NN object))
+                  (PP (IN of)
+                    (NP (NN research))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (JJ Irish) (NN novelty) (NN song))
+    (VP (VBN written)
+      (PP (IN by)
+        (NP (NNP Pat) (NNP White))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN basketball) (NN club))
+    (VP (VBN based)
+      (PP (IN in)
+        (NP
+          (NP (NNP Kapfenberg))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is)
+                (NP
+                  (NP (DT a) (NN town))
+                  (PP (IN in)
+                    (NP
+                      (NP (NNP Styria))
+                      (, ,)
+                      (NP
+                        (NP (DT a) (NN state))
+                        (PP (IN of)
+                          (NP (NNP Austria)))))))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ British) (NNP Conservative) (NNP Party) (NN politician))
+    (, ,)
+    (NP
+      (NP (NN journalist))
+      (CC and)
+      (NP (JJ prolific) (NN historian)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT a) (CD 2006) (NN documentary) (NN film))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ explores)
+            (NP
+              (NP (DT the) (NN philosophy))
+              (CC and)
+              (NP (DT the) (NN life)))))))
+    (PP (IN of)
+      (NP
+        (NP (NNP Bob) (NNP Randall))
+        (, ,)
+        (NP
+          (NP (DT an) (JJ Aboriginal) (NN man))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ lives)
+                (PP (IN beside)
+                  (NP
+                    (NP
+                      (NP (DT the) (NN world) (POS 's))
+                      (JJS greatest) (NN monolith))
+                    (, ,)
+                    (NP (NNP Uluru))
+                    (, ,)
+                    (PP (IN in)
+                      (NP (NNP Central) (NNP Australia)))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP (VBN represented)
+      (PP (IN by)
+        (NP (CD 2) (NNS athletes)))
+      (PP (IN at)
+        (NP (DT the) (CD 2006) (NNP FEI) (NNP World) (NNP Equestrian) (NNP Games)))
+      (PP (IN in)
+        (NP (NNP Aachen) (, ,) (NNP Germany))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ western) (NN branch))
+      (PP (IN of)
+        (NP
+          (NP (NNP Raudfjorden))
+          (PP (IN in)
+            (NP (NNP Albert) (NNP I))))))
+    (VP (VBP Land)
+      (PP (IN at)
+        (NP (NNP Spitsbergen) (, ,) (NNP Svalbard))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN hospital))
+    (VP (VBN located)
+      (PP (IN in)
+        (NP
+          (NP (NNP Dooradoyle))
+          (, ,)
+          (NP
+            (NP (NNP County) (NNP Limerick))
+            (, ,)
+            (NP (NNP Ireland))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN commune))
+    (PP (IN in)
+      (NP
+        (NP (DT the) (JJ Haute-Sane) (NN department))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN region))
+            (PP (IN of)
+              (NP (NNP Franche-Comt)))))))
+    (PP (IN in)
+      (NP (JJ eastern) (NNP France)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT the) (NN plural) (NN form))
+    (PP (IN of)
+      (NP (DT the) (NN word) (`` ``) (NN erratum) ('' '')))
+    (. .)))
+
+(ROOT
+  (S
+    (VP (VBN considered)
+      (PP (IN among)
+        (NP
+          (NP (DT the) (NN one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (RBS most) (JJ artistic))
+              (PP (IN of)
+                (NP (DT the) (NNP Pomeranian) (NNS dukes))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP
+      (VP (VBN situated)
+        (PP (IN in)
+          (NP (NNP Deori) (NNP tehsil))))
+      (CC and)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (NNP Gondiya) (NN district))
+            (PP (IN of)
+              (NP (NNP Maharashtra) (, ,) (NNP India)))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP
+      (NP
+        (NP
+          (NP (NNP Yeovil) (NNP Town) (POS 's))
+          (JJ 7th) (NN season))
+        (PP (IN in)
+          (NP (DT the) (NNP Football) (NNP League))))
+      (CC and)
+      (NP
+        (NP (PRP$ their) (JJ sixth) (JJ consecutive) (NN season))
+        (PP (IN in)
+          (NP (NNP League) (CD One)))))
+    (VP (VBG finishing)
+      (PP (IN in)
+        (NP (JJ 15th) (NN position)))
+      (PP (IN with)
+        (NP (CD 53) (NNS points))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NN attack))
+      (PP (IN upon)
+        (NP
+          (NP (DT a) (NN target))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT which)))
+            (S
+              (NP (DT an) (NN attacker))
+              (VP
+                (VP (VBZ intends)
+                  (S
+                    (VP (TO to)
+                      (VP (VB kill)
+                        (NP (NNS others))))))
+                (CC and\/or)
+                (VP (VB cause)
+                  (NP
+                    (NP (JJ great) (NN damage))
+                    (, ,)
+                    (UCP
+                      (VP (VBG knowing)
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP he)
+                              (CC or)
+                              (PRP she))
+                            (VP (MD will) (RB either)
+                              (VP (VB certainly))))))
+                      (CC or)
+                      (ADJP (RBS most) (JJ likely)))))))))))
+    (VP (VBP die)
+      (PP (IN in)
+        (NP (DT the) (NN process))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ three-county) (NN region))
+    (PP (IN in)
+      (NP
+        (NP (NNP southeast) (NNP Arkansas))
+        (, ,)
+        (VP (VBN anchored)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN city))
+              (PP (IN of)
+                (NP (NNP Pine) (NNP Bluff))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN list))
+      (PP (IN of)
+        (NP
+          (NP (NNS characters))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN Jak)
+                (CC and)
+                (NN Daxter) (NN series))
+              (, ,)
+              (NP (DT a) (JJ video) (NN game) (NN franchise)))))))
+    (ADVP (RB originally))
+    (VP (VBD developed)
+      (PP (IN by)
+        (NP (NNP Naughty) (NNP Dog)))
+      (PP (IN for)
+        (NP (DT the) (NNP PlayStation) (CD 2))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN weekend))
+    (VP (VBD RTHK)
+      (NP (NN program))
+      (PP (IN in)
+        (NP (NNP Hong) (NNP Kong)))
+      (, ,)
+      (UCP
+        (ADJP (JJ similar)
+          (PP (TO to)
+            (NP
+              (NP (NNP Crimewatch))
+              (PP (IN in)
+                (NP (DT the) (NNP UK))))))
+        (CC or)
+        (NP
+          (NP
+            (NP (NNP America) (POS 's))
+            (JJS Most))
+          (VP (VBN Wanted)
+            (PP (IN in)
+              (NP (DT the) (NNP United) (NNPS States)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NNP French))
+    (VP (VBD philanthropist) (, ,)
+      (S (RB not)
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN confused)
+              (PP (IN with)
+                (NP (NNP Nicolas) (NNP Appert))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP (VBN listed)
+      (PP (IN in)
+        (NP (DT the) (JJ left-hand) (NN column))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT an) (JJ American) (NN politician))
+    (PP (IN from)
+      (NP (NNP New) (NNP York)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ major) (NN tributary))
+    (PP (IN of)
+      (NP (NNP Ayeyarwady) (NNP River)))
+    (PP (IN in)
+      (NP (NNP Myanmar)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN musician))
+      (PP (IN from)
+        (NP
+          (NP (NNP Germany))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ has)
+                (VP (VBN been)
+                  (NP
+                    (NP (DT a) (NN member))
+                    (PP (IN of)
+                      (NP (NNP Tangerine)))))))))))
+    (VP (VB Dream)
+      (PP (IN since)
+        (NP (CD 2005))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ single-action) (NN firearm))
+    (ADVP (RB specifically))
+    (VP (VBN designed)
+      (PP (IN for)
+        (NP (JJ practical) (JJ shooting) (NNS competitions))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ German) (NN music))
+    (NP
+      (NP (NN theorist) (, ,) (NN organist) (, ,) (NN composer) (, ,)
+        (CC and)
+        (NN lexicographer))
+      (PP (IN of)
+        (NP (DT the) (NNP Baroque) (NN era))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN fern))
+      (, ,)
+      (NP (NNP P.) (NNP atropurpurea))
+      (, ,))
+    (VP
+      (ADVP (RB commonly))
+      (VBN known)
+      (PP (IN as)
+        (NP
+          (NP (JJ purple-stem) (NN cliffbrake))
+          (CC or)
+          (NP (RB just) (JJ purple) (NN cliffbrake)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ national) (JJ historic) (NN district))
+    (VP (VBN located)
+      (PP (IN at)
+        (NP (NNP Oxford)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Chenango) (NNP County))
+          (, ,)
+          (NP (NNP New) (NNP York)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN football) (NN club))
+    (VP (VBN based)
+      (PP (IN on)
+        (NP
+          (NP (NNP West) (NNP Sumbawa))
+          (, ,)
+          (NP
+            (NP (NNP West) (NNP Nusa) (NNP Tenggara))
+            (, ,)
+            (NP (NNP Indonesia))))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (DT an) (JJ American) (NN singer))
+        (, ,)
+        (NP (NN songwriter))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN musician))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ is)
+                (VP (RBS best) (VBN known)
+                  (PP (IN for)
+                    (NP (PRP$ her) (CD 1992) (NN song) (NN Morning)))))
+              (PP (IN In)
+                (NP (NNP Seattle))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT an)
+      (ADJP (RB internationally) (JJ acclaimed))
+      (NN Macedonian))
+    (NP
+      (NP (JJ electronic) (NN musician))
+      (CC and)
+      (NP (NN music) (NN composer)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN village))
+    (PP (IN in)
+      (NP
+        (NP (DT the) (NN southeast))
+        (PP (IN of)
+          (NP (DT the) (NNPS Netherlands)))))
+    (, ,)
+    (NP
+      (NP (NN part))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN municipality))
+          (PP (IN of)
+            (NP (NNP Schinnen))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN football) (NN club))
+    (VP (VBN based)
+      (PP (IN in)
+        (NP
+          (NP (NNP Djibouti) (NNP City))
+          (, ,)
+          (NP (NNP Djibouti)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ chapel)
+      (CC and)
+      (JJ historic) (NN building))
+    (PP (IN on)
+      (NP (DT the) (NN campus)))
+    (PP (IN of)
+      (NP
+        (NP (NNP Carleton) (NNP College))
+        (PP (IN in)
+          (NP (NNP Northfield) (, ,) (NNP Minnesota) (, ,) (NNP United) (NNP States)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ Swedish) (NN TV-show))
+    (PP (IN about)
+      (NP
+        (NP (CD 15) (NNS nerds))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB never))
+            (VP (VBP have)
+              (VP (VBN played)
+                (NP (NN football))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN choir))
+    (VP (VBN based)
+      (PP (IN in)
+        (NP (DT the) (NNP Ateneo) (NNP de) (NNP Manila) (NNP University) (, ,) (NNPS Philippines))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ French) (NN archetier) (NN \/))
+    (VP (VBP bow)
+      (NP (NN maker))
+      (PP (VBN based)
+        (PP (IN in)
+          (NP (NNP Mirecourt) (, ,) (NNP France)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT a)
+        (ADJP (NNP Los) (JJ Angeles-based))
+        (, ,) (JJ self-funded) (NN company))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ owns)
+            (CC and)
+            (VBZ operates)
+            (NP
+              (NP (DT a) (NN network))
+              (PP (IN of)
+                (NP (JJ educational) (NNS websites)
+                  (CC and)
+                  (NNS apps))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN wasp))
+    (VP
+      (ADVP (RB first))
+      (VBN described)
+      (PP (IN by)
+        (NP (NNP G.S.))))))
+
+(ROOT
+  (S
+    (VP (VBN named)
+      (PP (IN in)
+        (NP (PRP$ his) (NN honor))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (NN fountain))
+    (VP (VBN located)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN square))
+          (PP (IN in)
+            (NP
+              (NP (NN front))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN church))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Santa) (NNP Maria))
+                      (PP (IN in)
+                        (NP
+                          (NP (NNP Trastevere))
+                          (, ,)
+                          (NP (NNP Rome) (, ,) (NNP Italy)))))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNS meningitis))
+    (VP (VBN associated)
+      (PP (IN with)
+        (NP (JJ herpes) (NN simplex) (NN virus))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (JJ international) (JJ electronic) (NNS sports) (NN league))
+    (VP (VBN based)
+      (PP (IN in)
+        (NP (DT the) (NNP United) (NNPS States)))
+      (PP (IN of)
+        (NP (NNP America)))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (PRP it))
+          (VP (VBD had)
+            (VP (VBN expanded)
+              (PP (TO to)
+                (NP
+                  (NP (DT every) (NN continent))
+                  (PP (IN except)
+                    (NP
+                      (NP (NNP Antarctica))
+                      (PP (IN for)
+                        (NP (NN Season) (CD Two)))))))
+              (PP (IN before)
+                (S
+                  (VP (VBG being)
+                    (VP
+                      (ADVP (RB abruptly))
+                      (VBN discontinued))))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN merchant\/trader)
+      (CC and)
+      (NN official))
+    (PP (IN of)
+      (NP (DT the) (NNP Dutch) (NNP East) (NNP India) (NNP Company)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NNS genus))
+    (PP (IN of)
+      (NP (NN sea) (NNS snails)))
+    (, ,)
+    (NP
+      (NP (JJ marine) (JJ gastropod) (NNS mollusks))
+      (PP (IN in)
+        (NP (DT the) (NN family) (NN Neritidae))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT an) (JJ English) (NN paleontologist))
+    (, ,)
+    (NP
+      (NP (DT an) (NN expert))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN field))
+          (PP (IN of)
+            (NP (JJ evolutionary) (NN biology))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ traditional) (JJ Salvadoran) (NN dish))
+    (VP (VBN made)
+      (PP (IN of)
+        (NP
+          (NP (DT a) (JJ thick) (, ,) (JJ handmade) (NN corn) (NN tortilla))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (ADVP (RB usually))
+                (VP (VBN filled)
+                  (PP (IN with)
+                    (NP
+                      (NP (DT a) (NN blend))
+                      (PP (IN of)
+                        (NP (DT the) (NN following))))))))))))
+    (: :)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN river))
+    (PP (IN in)
+      (NP (DT the) (NNP South) (NNP West)))
+    (PP (IN of)
+      (NP (NNP Western) (NNP Australia)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN species))
+      (PP (IN of)
+        (NP (NN ragweed))))
+    (VP (VBN known)
+      (PP (IN by)
+        (NP
+          (NP (DT the) (JJ common) (NNS names))
+          (NP (NNP Hollyleaf) (NNP Burr) (NNP Ragweed)
+            (CC and)
+            (NNP Hollyleaf) (NNP Bursage)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NNP EP))
+      (PP (IN by)
+        (NP (DT The) (JJS Most) (JJ Serene) (NN Republic))))
+    (VP
+      (VP (VBN released)
+        (PP (IN on)
+          (NP
+            (NP (NNP Home))
+            (PP (IN of)
+              (NP (DT the) (NNPS Rebels))))))
+      (CC and)
+      (VP (VBN distributed)
+        (PP (IN by)
+          (NP (NNP Arts)
+            (CC &)
+            (NNP Crafts)))))
+    (. .)))
+
+(ROOT
+  (S
+    (VP (VBN featured)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NNP Tommy) (NNP Hilfiger) (NN commercial))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD starred)
+                (NP (NNP Dobson))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ no-go) (NN theorem))
+    (PP (IN of)
+      (NP
+        (NP (NN quantum) (NNS mechanics))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ forbids)
+              (NP
+                (NP (DT the) (NN creation))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ identical) (NNS copies))
+                    (PP (IN of)
+                      (NP (DT an)
+                        (ADJP (JJ arbitrary) (JJ unknown))
+                        (NN quantum) (NN state)))))))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT a) (JJ Soviet-era) (NN economist))
+      (CC and)
+      (NP (NN politician)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN term))
+    (PP (IN for)
+      (NP (DT the) (NN accumulation)))
+    (PP (IN of)
+      (NP
+        (NP (JJ American) (NNS dollars))
+        (ADVP (IN outside))))
+    (PP (IN of)
+      (NP (DT the) (NNP United) (NNPS States)))
+    (PP (IN as)
+      (NP
+        (NP (DT a) (NN reserve) (NN currency))
+        (, ,)
+        (VP (VBN contrasted)
+          (PP (IN with)
+            (NP (DT the) (NN dollar) (NN gap))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBN led)
+              (PP (TO to)
+                (NP (DT the) (NN creation))))))))
+    (PP (IN of)
+      (NP (DT the) (NNP Marshall) (NNP Plan)))
+    (PP (VBG following)
+      (NP (NNP World) (NNP War) (NNP II)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN level))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ is)
+            (NP (CD one))))))
+    (VP (VBP tier)
+      (PP (IN below)
+        (NP (DT the) (NNP Euroleague) (NN level))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ coalfield) (NN area))
+    (VP (VBN situated)
+      (NP (CD 12kilometers))
+      (PP (IN from)
+        (NP
+          (NP (NNP Asansol))
+          (, ,)
+          (NP (NNP West) (NNP Bengal)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN species))
+    (PP (IN of)
+      (NP (NN lichen)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NN settlement)
+      (CC and)
+      (JJ electoral) (NN district))
+    (PP (IN in)
+      (NP (DT the) (JJ historical) (NN Barony)))
+    (PP (IN of)
+      (NP
+        (NP (NNP Ormond) (NNP Lower))
+        (, ,)
+        (NP
+          (NP (NNP North) (NNP Tipperary))
+          (, ,)
+          (NP (NNP Ireland)))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT a) (NNP U.S.) (NNP Representative))
+    (PP (IN from)
+      (NP (NNP Kentucky)))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (CD one))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (JJ national) (NNS championships))
+        (PP (IN for)
+          (NP (JJ collegiate) (NN policy) (NN debate)))))
+    (PP (IN in)
+      (NP (DT the) (NNP United) (NNPS States)))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (JJ effective) (NN method))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ causes)
+      (NP (DT the) (JJ thermal) (NN component))
+      (PP (TO to)
+        (NP (NN under-perform)))
+      (PP (VBN compared)
+        (PP (TO to)
+          (NP (DT a) (JJ solar) (JJ thermal) (NN collector)))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (CD 1999) (CD Hindi-language) (JJ Indian) (NN feature) (NN film))
+    (VP
+      (VP (VBD directed)
+        (PP (IN by)
+          (NP (NNP Mahesh) (NNP Bhatt))))
+      (CC and)
+      (VP (VBD produced)
+        (PP (IN by)
+          (NP (NNP Mukesh) (NNP Bhatt)))
+        (, ,)
+        (S
+          (VP (VBG starring)
+            (NP
+              (NP (NNP Saif) (NNP Ali) (NNP Khan))
+              (, ,)
+              (NP (NNP Twinkle) (NNP Khanna))
+              (, ,)
+              (NP (NNP Akshay) (NNP Anand))
+              (CC and)
+              (NP (NNP Chunky) (NNP Pandey)))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT an) (NN internationally))
+    (VP (VBD accredited)
+      (NP (JJ secondary) (NN school))
+      (PP (IN with)
+        (NP (JJ deep) (NNS roots)))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN community))
+          (PP (IN of)
+            (NP (NNP Mzuzu))))))
+    (. .)))
+
+(ROOT
+  (NP
+    (NP (DT the) (JJ third) (JJ production-based) (NN album))
+    (PP (IN by)
+      (NP
+        (NP (DT the) (JJ American) (JJ electronic) (NN rock) (NN artist))
+        (, ,)
+        (NP (NNP Celldweller))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (JJ nuclear) (NN power) (NN station))
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP Heysham) (, ,) (NNP Lancashire) (, ,) (NNP England) (, ,)))))
+    (VP (VBD operated)
+      (PP (IN by)
+        (NP (NNP EDF) (NNP Energy))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (DT a) (JJ city-owned) (JJ public-use) (NN airport))
+    (VP (VBN located)
+      (PP
+        (ADVP
+          (NP (CD one) (NN mile))
+          (RB south))
+        (IN of)
+        (NP
+          (NP (DT the) (JJ central) (NN business) (NN district))
+          (PP (IN of)
+            (NP
+              (NP (NNP Henning))
+              (, ,)
+              (NP
+                (NP (DT a) (NN city))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP Otter) (NNP Tail) (NNP County))
+                    (, ,)
+                    (NP (NNP Minnesota) (, ,) (NNP United) (NNPS States))))))))))
+    (. .)))
+
