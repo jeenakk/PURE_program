@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, graphicx, fullpage,  enumerate, url, ulem, algorithmic, polynom, subfig, program,framed}
+
+\title{Experiments on Recursive Neural Networks for Textual Entailment and Semantic Sentence Similarity \\ PURE Progress Report }
+
+\author{Tianxiao Zhang \\ Mentor: Daniel Khashabi  }
+
+\bibliographystyle{plain}
+
+\begin{document}
+% {\noindent\bf\huge PURE Progress Report}   \newline
+% {\bf Mentor :} {\bf Mentee :} Tianxiao Zhang \newline
+% \hrule height 3pt 
+
+\maketitle
+
+\section{Introduction}
+ In the Machine Learning community, deep learning models have recently gained lots of attention because of their ability to utilize the vast amount of unlabeled data. As an important application, in Natural Language Processing applications, there is a great need for using such models. Towards that goal, our aim is to design neural network model for one of the hardest problems in natural language processing. The task is to predict the degree of relatedness between pair sentences and detect the entailment relation between them, which is commonly known as Recognizing Textual Entailment (RTE) \cite{dagan2010recognizing}.  \\
+  
+
+In the modeling part, we are studying evaluation of compositional distributional semantic models on full sentences through semantic relatedness and entailment via dynamic pooling and unfolding recursive autoencoders. We have started the project by making upon a state-of-the-art paraphrase system \cite{socher2011dynamic}, based on recursive neural networks, which is recently developed at Stanford University. We are creating our ideas upon this model, and hoping to get better results, as we add more structure to the current work. We also plan to participate in the SemEval2014 \footnote{http://alt.qcri.org/semeval2014/task1/} competitions for RTE problem. 
+
+\section{The problem}
+Before talking the procedures of our research so far, it would be better to introduce the related background first. As a main part in our research, we need to define the notion of ``entailment". Consider the following two sentences (A) and (B). Suppose everything in the text (A) is true (i.e. it is a fact), and using (A) we want to evaluate the truth of the claim in sentence (B). There are three possible cases for entailment detection:
+\begin{itemize}
+\item \textbf{Entailment:} The set of facts in the sentence (A) entail the sentence (B)
+\item \textbf{Contradiction:} The set of facts in the sentence (A) contradict the sentence (B)
+\item \textbf{Neural:} None of the above two cases
+
+\end{itemize}
+
+
+For instance, consider the following pair of sentences: 
+\begin{framed}
+\textbf{Text:} ``A group of kids is playing in a yard and an old man is standing in the background"  
+ 
+\textbf{Hypothesis:} ``A group of boys in a yard is playing and a man is standing in the background"
+\end{framed}
+In this example the relation between two sentences is \textit{neutral}, since the first sentence neither entail nor contradict the second sentence. Similarly consider the following example:
+\begin{framed}
+\textbf{Text:} ``The young boys are playing outdoors and the man is smiling nearby"  
+
+\textbf{Hypothesis:} ``The kids are playing outdoors near a man with a smile"
+\end{framed}
+In this pair, the first sentences \textit{entails} the second sentence.
+ 
+
+\section{Current System}
+ 
+As a baseline system, we started the project by making upon a state-of-the-art paraphrase system, based on recursive neural networks, which is recently developed at Stanford University \cite{socher2011dynamic}. Since the paraphrase system only builds the binary label classifier, our first try was to combine any two types of them to a new value. For example, we divided our training data into two values(contradiction,others) and used this preprocess binary label data to construct classifier and compared the results to other two division(NeutralvsOthers,EntailmentvsOthers). The second step we tried was to keep the three labels and trained our own neural networks to classify the entailment. 
+
+
+\section{Results}
+Based on the evaluation requirement of SemEval2014 competitions for RTE problem, we focus our program results on common performance measures: Accuracy and F-Measure. Since the three label prediction is relatively hard, we have divided it into three different binary predictions: 
+
+\begin{itemize}
+\item Contradiction Vs. Others 
+\item Entailment Vs. Others 
+\item Neutral Vs. Others 
+\end{itemize}
+
+In the table \ref{tab:entrailmentVsOthers}, we have summarized the result of our systems on the subtask ``\textit{Entailment Vs. Others}". The system LCLR in the table is the system explained here \cite{chang2010discriminative}. 
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline 
+System & F1 & Accuracy \\ 
+\hline
+\hline 
+LCLR  &  0.7396  &   0.871  \\ 
+\hline	
+RNN &  0.804 &  0.695 \\ 
+\hline 
+\end{tabular}
+\caption{Some preliminary results with our model (\textit{EntailmentVsOthers} subtask)}
+\label{tab:entrailmentVsOthers}
+\end{table}
+
+
+\section{Future work}
+The outline of our future work are the followings: 
+\begin{itemize}
+\item Generalizing the binary models to multi-class classification: We plan to use One-Vs-All strategy for multi-class classification. 
+\item Performing extensive experiments on the effect of adding different distributed representations to the model, e.g. \cite{gabrilovich2007computing,mikolov2010recurrent} 
+\item Adding a new word-entailment measure that we have recently developed (under submition). 
+\item Using unsupervised data for learning entailment
+\end{itemize}
+
+
+\section{Discussion}
+In this PURE research, I learnt a lot not only on professional research methods but the rigorous scientific attitude  and creativity on problem solving. During my real research experience with such talent and responsible mentor Daniel, I grasped variety of tools and algorithms in Machine Learning and Natural Language Processing. Based on his patient instruction, I understood the basic flow of recursive neural network and tried to train it for our project data. Moreover, I learnt many ideas like difference between precision, recall and F1 Measure. Follow by our program requirement, we talked about the integer programming as well.  Also, through digging into the former paraphase system code, I learnt the method of unfolding autoencoder and dynamic pooling. 
+
+
+\bibliography{ref}	
+
+\end{document}  
